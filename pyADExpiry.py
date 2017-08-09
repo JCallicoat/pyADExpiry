@@ -39,7 +39,7 @@ class PyADExpiry(object):
         self.tray_icon.show()
         
         self.check_expiry()
-        self.tray_icon.setToolTip('You AD password will expire in {} days.'.format(self.exp_days))
+        self.tray_icon.setToolTip('Your AD password will expire in {} days.'.format(self.exp_days))
 
         timer = QTimer()
         timer.timeout.connect(self.activate_callback)

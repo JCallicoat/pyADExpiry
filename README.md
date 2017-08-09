@@ -8,4 +8,6 @@ You may also like to change the `edir_uri` option if you are using a dirrent end
 
 Then just start pyADExpiry.py and it will check for expiration every 24 hours and pop up an alert whenever your password is 14 days or less from expiration.
 
+![Screenshot](screenshot.png?raw=true "Screenshot")
+
 That's all folks.
