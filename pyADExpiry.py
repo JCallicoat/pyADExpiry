@@ -39,7 +39,6 @@ class PyADExpiry(object):
         self.tray_icon.show()
         
         self.check_expiry()
-        self.tray_icon.setToolTip('Your AD password will expire in {} days.'.format(self.exp_days))
 
         timer = QTimer()
         timer.timeout.connect(self.activate_callback)
@@ -93,6 +92,7 @@ class PyADExpiry(object):
             self.tray_icon.setIcon(self.warn_icon)
         else:
             self.tray_icon.setIcon(self.ok_icon)
+        self.tray_icon.setToolTip('Your AD password will expire in {} days.'.format(self.exp_days))
 
     def show_warn_dialog(self):
         dialog = QtGui.QMessageBox()
